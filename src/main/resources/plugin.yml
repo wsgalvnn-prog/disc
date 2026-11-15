@@ -1,0 +1,18 @@
+name: JudahsThrowingDiscs
+version: '${project.version}'
+main: dev.disc.paper.ThrowingDiscPlugin
+api-version: '1.21'
+authors: [JudahXP]
+description: Throwing discs that bounce, pierce and return. Paper port of Judah's Throwing Discs.
+commands:
+  throwingdisc:
+    description: Give throwing discs or reload the config
+    usage: /<command> <give|reload>
+    aliases: [disc]
+permissions:
+  throwingdisc.give:
+    description: Use /throwingdisc give
+    default: op
+  throwingdisc.reload:
+    description: Use /throwingdisc reload
+    default: op

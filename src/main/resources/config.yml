@@ -1,0 +1,57 @@
+# Judah's Throwing Discs (Paper) - settings
+
+# Hits ignore armor (the original mod's discs were being blunted by armor).
+# true  = damage uses a magic-style source that skips armor points
+# false = damage uses the vanilla "thrown" source (armor reduces it)
+armor-piercing: true
+
+# A disc that hits a player who is blocking with a shield (and facing it) knocks the shield down
+# and puts it on cooldown, like an axe. Value is in ticks (100 = 5 seconds, same as an axe). 0 = off.
+shield-disable-ticks: 100
+
+# Item appearance.
+# false = discs look like vanilla music discs (works with no resource pack)
+# true  = discs use the throwing_disc item models; players need the resource pack
+custom-model: false
+
+# Optional: send the resource pack to players on join (leave url empty to disable).
+resource-pack:
+  url: ""
+  sha1: ""
+  force: false
+
+# Unlock the disc recipes in the recipe book when a player joins.
+discover-recipes: true
+
+flight:
+  speed: 1.25               # blocks per tick when thrown
+  max-speed: 3.0            # speed cap after bounces
+  bounce-speed-boost: 1.15  # speed multiplier per bounce
+  max-bounces: 8
+  max-age-ticks: 160        # starts returning after this long
+  hard-max-age-ticks: 320   # drops to the ground after this long
+  base-distance: 18.0       # starts returning after this many blocks...
+  distance-per-bounce: 12.0 # ...plus this much per bounce
+  cooldown-ticks: 4
+
+tiers:
+  copper:
+    damage: 4.0
+    durability: 95
+    base-material: MUSIC_DISC_CHIRP
+  iron:
+    damage: 5.0
+    durability: 125
+    base-material: MUSIC_DISC_STAL
+  gold:
+    damage: 4.0
+    durability: 16
+    base-material: MUSIC_DISC_WARD
+  diamond:
+    damage: 7.0
+    durability: 780
+    base-material: MUSIC_DISC_FAR
+  netherite:
+    damage: 8.0
+    durability: 1015
+    base-material: MUSIC_DISC_PIGSTEP
